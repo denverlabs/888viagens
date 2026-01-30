@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>888 Viagens</title>
+    <meta name="description" content="888 Viagens — ofertas e viagens mais inteligentes." />
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background: #0b1220;
+        color: #e5e7eb;
+      }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 64px 20px; }
+      .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        border: 1px solid rgba(255,255,255,.18);
+        border-radius: 999px;
+        font-size: 12px;
+        opacity: .9;
+      }
+      h1 { margin: 18px 0 10px; font-size: 44px; line-height: 1.05; }
+      p { margin: 0; font-size: 18px; opacity: .9; max-width: 56ch; }
+      .ctaRow { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; }
+      a.btn {
+        display: inline-block;
+        padding: 12px 16px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 650;
+      }
+      .primary { background: #22c55e; color: #06120a; }
+      .ghost { border: 1px solid rgba(255,255,255,.18); color: #e5e7eb; }
+      .grid {
+        margin-top: 46px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+      }
+      .card {
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 16px;
+        padding: 16px;
+        background: rgba(255,255,255,.03);
+      }
+      .card h3 { margin: 0 0 6px; font-size: 16px; }
+      .card small { opacity: .85; }
+      footer { margin-top: 56px; opacity: .7; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <span class="badge">✈️ 888 Viagens • em breve</span>
+      <h1>Viagens mais simples.<br/>Ofertas que chegam rápido.</h1>
+      <p>
+        Um lugar para encontrar promoções e organizar sua próxima viagem — sem complicação.
+      </p>
+
+      <div class="ctaRow">
+        <a class="btn primary" href="#">Quero ser avisado</a>
+        <a class="btn ghost" href="#">Ver como funciona</a>
+      </div>
+
+      <section class="grid">
+        <div class="card">
+          <h3>Promoções</h3>
+          <small>Ofertas selecionadas e alertas.</small>
+        </div>
+        <div class="card">
+          <h3>Rápido</h3>
+          <small>Direto ao ponto, sem enrolação.</small>
+        </div>
+        <div class="card">
+          <h3>WhatsApp ready</h3>
+          <small>Perfeito pra virar um funil no WhatsApp.</small>
+        </div>
+        <div class="card">
+          <h3>Web3 optional</h3>
+          <small>Se quiser, dá pra plugar pagamentos depois.</small>
+        </div>
+      </section>
+
+      <footer>© 888 Viagens • Feito com vibe coding</footer>
+    </main>
+  </body>
+</html>
