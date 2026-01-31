@@ -423,60 +423,6 @@
         color: var(--primary-yellow);
       }
 
-      /* Features */
-      .features {
-        padding: 100px 40px;
-        background: rgba(0,0,0,0.2);
-      }
-
-      .features-content {
-        max-width: 1400px;
-        margin: 0 auto;
-      }
-
-      .features-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 32px;
-      }
-
-      .feature-card {
-        background: var(--card-bg);
-        padding: 32px;
-        border-radius: 20px;
-        border: 1px solid rgba(255,255,255,0.05);
-        transition: transform 0.3s, border-color 0.3s;
-      }
-
-      .feature-card:hover {
-        transform: translateY(-5px);
-        border-color: var(--accent-teal);
-      }
-
-      .feature-icon {
-        width: 56px;
-        height: 56px;
-        background: linear-gradient(135deg, rgba(0, 180, 160, 0.2), rgba(0, 151, 57, 0.2));
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 28px;
-        margin-bottom: 20px;
-      }
-
-      .feature-card h3 {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 12px;
-      }
-
-      .feature-card p {
-        color: var(--text-muted);
-        font-size: 14px;
-        line-height: 1.6;
-      }
-
       /* Offers */
       .offers {
         padding: 100px 40px;
@@ -742,7 +688,7 @@
         .hero-content {
           grid-template-columns: 1fr;
         }
-        .features-grid, .offers-grid {
+        .offers-grid {
           grid-template-columns: repeat(2, 1fr);
         }
         .footer-content {
@@ -773,13 +719,13 @@
         .search-fields {
           grid-template-columns: 1fr;
         }
-        .destinations, .features, .offers {
+        .destinations, .offers {
           padding: 60px 20px;
         }
         .section-header h2 {
           font-size: 32px;
         }
-        .destinations-grid, .features-grid, .offers-grid {
+        .destinations-grid, .offers-grid {
           grid-template-columns: 1fr;
         }
         .newsletter {
@@ -919,39 +865,6 @@
               <span class="from">a partir de</span>
               <span class="price">R$ 399</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-      <div class="features-content">
-        <div class="section-header">
-          <span>Por que escolher a 888?</span>
-          <h2>Viaje com tranquilidade</h2>
-          <p>Oferecemos a melhor experiência para sua viagem</p>
-        </div>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">💰</div>
-            <h3>Melhor Preço</h3>
-            <p>Garantimos os melhores preços do mercado. Encontrou mais barato? A gente cobre!</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🛡️</div>
-            <h3>Pagamento Seguro</h3>
-            <p>Suas transações são 100% seguras com criptografia de ponta a ponta.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">📱</div>
-            <h3>Suporte 24h</h3>
-            <p>Atendimento via WhatsApp 24 horas por dia, 7 dias por semana.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">✈️</div>
-            <h3>Flexibilidade</h3>
-            <p>Remarcações e cancelamentos sem burocracias. Viaje sem preocupações.</p>
           </div>
         </div>
       </div>
