@@ -35,10 +35,56 @@
         overflow-x: hidden;
       }
 
+      /* Construction Banner */
+      .construction-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        background: linear-gradient(135deg, var(--primary-yellow), var(--accent-orange));
+        color: #1a1a1a;
+        padding: 14px 20px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        box-shadow: 0 4px 20px rgba(254, 221, 0, 0.4);
+      }
+
+      .construction-banner .icon {
+        font-size: 22px;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+
+      .construction-banner .text {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .construction-banner .badge {
+        background: rgba(0,0,0,0.15);
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+      }
+
       /* Header */
       header {
         position: fixed;
-        top: 0;
+        top: 52px;
         left: 0;
         right: 0;
         z-index: 1000;
@@ -102,7 +148,7 @@
         min-height: 100vh;
         display: flex;
         align-items: center;
-        padding: 120px 40px 80px;
+        padding: 170px 40px 80px;
         position: relative;
         overflow: hidden;
       }
@@ -712,7 +758,14 @@
           display: none;
         }
         .hero {
-          padding: 100px 20px 60px;
+          padding: 160px 20px 60px;
+        }
+        .construction-banner {
+          font-size: 13px;
+          padding: 12px 16px;
+        }
+        .construction-banner .badge {
+          display: none;
         }
         .hero-text h1 {
           font-size: 36px;
@@ -749,6 +802,16 @@
     </style>
   </head>
   <body>
+    <!-- Construction Banner -->
+    <div class="construction-banner">
+      <span class="icon">🚧</span>
+      <div class="text">
+        <span class="badge">Em breve</span>
+        <span>Site em construção — Estamos preparando algo incrível para você!</span>
+      </div>
+      <span class="icon">🚧</span>
+    </div>
+
     <!-- Header -->
     <header>
       <div class="logo">888<span>Viagens</span></div>
