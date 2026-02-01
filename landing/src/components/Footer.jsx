@@ -4,21 +4,21 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-[#1A1917] text-white border-t border-[#B1ADA1]/10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
         <div className="py-12 lg:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-1 mb-4">
-              <span className="text-2xl font-extrabold text-teal-400">888</span>
-              <span className="text-2xl font-bold text-white">Viagens</span>
+            <a href="#" className="flex items-center gap-1.5 mb-4">
+              <span className="text-2xl font-bold text-[#C15F3C]">888</span>
+              <span className="text-2xl font-semibold text-white">Viagens</span>
             </a>
-            <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
+            <p className="text-[#B1ADA1] leading-relaxed mb-6 max-w-sm text-sm">
               Sua agência de viagens online com atendimento humanizado. Planejamos cada detalhe para você viajar tranquilo.
             </p>
             {/* Social Links */}
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
@@ -26,7 +26,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-teal-600 transition-colors"
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-[#C15F3C] transition-colors"
                 >
                   {social.icon === 'instagram' && (
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -50,13 +50,13 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Empresa</h4>
+            <h4 className="font-semibold text-white mb-4 text-sm">Empresa</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-teal-400 transition-colors"
+                    className="text-[#B1ADA1] hover:text-[#C15F3C] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -67,13 +67,13 @@ export default function Footer() {
 
           {/* Support Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Suporte</h4>
+            <h4 className="font-semibold text-white mb-4 text-sm">Suporte</h4>
             <ul className="space-y-3">
               {footerLinks.support.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-teal-400 transition-colors"
+                    className="text-[#B1ADA1] hover:text-[#C15F3C] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+        <div className="py-6 border-t border-[#B1ADA1]/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#6B6860]">
           <p>&copy; {currentYear} 888 Viagens. Todos os direitos reservados.</p>
           <p>Feito com carinho para viajantes brasileiros.</p>
         </div>
