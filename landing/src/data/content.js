@@ -1,9 +1,6 @@
 export const navLinks = [
   { label: 'Como funciona', href: '#como-funciona' },
-  { label: 'Benefícios', href: '#beneficios' },
   { label: 'Destinos', href: '#destinos' },
-  { label: 'Depoimentos', href: '#depoimentos' },
-  { label: 'FAQ', href: '#faq' },
 ];
 
 export const heroCards = [
@@ -80,37 +77,25 @@ export const destinations = [
     image: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&q=80',
     city: 'Rio de Janeiro',
     state: 'RJ',
-    price: 'R$ 1.290',
+    price: 'a partir de R$ 1.290',
   },
   {
     image: 'https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80',
     city: 'Fernando de Noronha',
     state: 'PE',
-    price: 'R$ 3.890',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-    city: 'Florianópolis',
-    state: 'SC',
-    price: 'R$ 980',
+    price: 'a partir de R$ 3.890',
   },
   {
     image: 'https://images.unsplash.com/photo-1552083375-1447ce886485?w=800&q=80',
     city: 'Salvador',
     state: 'BA',
-    price: 'R$ 1.150',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80',
-    city: 'Gramado',
-    state: 'RS',
-    price: 'R$ 890',
+    price: 'a partir de R$ 1.150',
   },
   {
     image: 'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=800&q=80',
     city: 'Jericoacoara',
     state: 'CE',
-    price: 'R$ 2.190',
+    price: 'a partir de R$ 2.190',
   },
 ];
 
@@ -181,5 +166,5 @@ export const footerLinks = {
   ],
 };
 
-export const whatsappNumber = '5511999999999';
+export const whatsappNumber = '5521971592888';
 export const whatsappMessage = 'Olá! Quero planejar minha viagem dos sonhos.';
