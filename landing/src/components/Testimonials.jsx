@@ -2,34 +2,34 @@ import { testimonials } from '../data/content';
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className="py-20 lg:py-28 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="depoimentos" className="py-24 lg:py-32 bg-[#F4F3EE]">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-teal-600 font-semibold text-sm uppercase tracking-wider mb-3">
+          <span className="inline-block text-[#C15F3C] font-medium text-sm uppercase tracking-wider mb-4">
             Quem viajou, aprovou
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1917] mb-4">
             O que nossos clientes dizem
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[#6B6860] max-w-xl mx-auto">
             Histórias reais de viajantes que confiaram na gente.
           </p>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-all"
+              className="bg-white p-8 rounded-2xl border border-[#B1ADA1]/20"
             >
               {/* Stars */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-5">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    className="w-5 h-5 text-amber-400"
+                    className="w-5 h-5 text-[#C15F3C]"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -39,7 +39,7 @@ export default function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-[#6B6860] leading-relaxed mb-6 text-sm">
                 "{testimonial.text}"
               </p>
 
@@ -48,13 +48,13 @@ export default function Testimonials() {
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-gray-900">
+                  <p className="font-semibold text-[#1A1917] text-sm">
                     {testimonial.name}
                   </p>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm text-[#B1ADA1]">
                     {testimonial.location}
                   </p>
                 </div>

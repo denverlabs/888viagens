@@ -2,17 +2,17 @@ import { benefits } from '../data/content';
 
 export default function Benefits() {
   return (
-    <section id="beneficios" className="py-20 lg:py-28 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="beneficios" className="py-24 lg:py-32 bg-[#F4F3EE]">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-teal-600 font-semibold text-sm uppercase tracking-wider mb-3">
+          <span className="inline-block text-[#C15F3C] font-medium text-sm uppercase tracking-wider mb-4">
             Por que escolher a 888?
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1917] mb-4">
             Benefícios de viajar com a gente
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[#6B6860] max-w-xl mx-auto">
             Mais do que vender viagens, cuidamos de cada detalhe da sua experiência.
           </p>
         </div>
@@ -22,15 +22,15 @@ export default function Benefits() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-teal-200 hover:shadow-lg transition-all group"
+              className="bg-white p-8 rounded-2xl border border-[#B1ADA1]/20 hover:border-[#C15F3C]/30 transition-all group"
             >
-              <span className="text-4xl mb-4 block group-hover:scale-110 transition-transform">
+              <span className="text-3xl mb-5 block">
                 {benefit.icon}
               </span>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
+              <h3 className="text-lg font-semibold text-[#1A1917] mb-2">
                 {benefit.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-[#6B6860] leading-relaxed text-sm">
                 {benefit.description}
               </p>
             </div>

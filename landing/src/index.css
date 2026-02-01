@@ -2,10 +2,16 @@
 
 @theme {
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --color-primary: #0D9488;
-  --color-primary-dark: #0F766E;
-  --color-secondary: #F59E0B;
-  --color-accent: #6366F1;
+
+  /* Paleta cálida inspirada en Claude.ai */
+  --color-primary: #C15F3C;
+  --color-primary-hover: #A84E30;
+  --color-background: #F4F3EE;
+  --color-surface: #FFFFFF;
+  --color-neutral: #B1ADA1;
+  --color-neutral-dark: #6B6860;
+  --color-text: #1A1917;
+  --color-text-muted: #6B6860;
 }
 
 html {
@@ -14,6 +20,26 @@ html {
 
 body {
   font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-dark);
 }
