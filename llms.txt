@@ -1,0 +1,92 @@
+# 888 Viagens - Agent API
+
+> Alertas de viagem para a Europa | Brasil → Europa
+
+## O que fazemos
+Somos uma agência de viagens brasileira especializada em viagens para a Europa. Nosso diferencial é o sistema de alertas de preço: monitoramos o mercado e avisamos quando é o melhor momento para comprar.
+
+## Contato
+- WhatsApp: +55 21 97159-2888
+- Site: https://888viagens.com
+
+## API Endpoints
+
+### GET /api/destinos
+Retorna lista de destinos disponíveis na Europa.
+
+Resposta:
+```json
+{
+  "destinos": [
+    {
+      "id": "espanha",
+      "pais": "Espanha",
+      "cidades": ["Madrid", "Barcelona", "Sevilha"],
+      "disponivel": true
+    }
+  ]
+}
+```
+
+### POST /api/cotacao
+Solicitar cotação de viagem.
+
+Corpo:
+```json
+{
+  "destino": "espanha",
+  "dataIda": "2026-06-15",
+  "dataVolta": "2026-06-25",
+  "pessoas": 2,
+  "email": "cliente@email.com",
+  "telefone": "+55 21 99999-9999"
+}
+```
+
+### POST /api/alerta
+Criar alerta de preço para um destino.
+
+Corpo:
+```json
+{
+  "destino": "franca",
+  "email": "cliente@email.com",
+  "precoMaximo": 5000
+}
+```
+
+### POST /api/contato
+Enviar mensagem de contato.
+
+Corpo:
+```json
+{
+  "nome": "João Silva",
+  "email": "joao@email.com",
+  "mensagem": "Quero saber mais sobre pacotes para a Suíça"
+}
+```
+
+### POST /api/newsletter
+Inscrever-se na newsletter de ofertas.
+
+Corpo:
+```json
+{
+  "email": "cliente@email.com"
+}
+```
+
+## Exemplos de uso por agentes
+
+Um agente pode:
+1. Listar destinos: GET /api/destinos
+2. Criar alerta: POST /api/alerta com destino e email
+3. Solicitar cotação: POST /api/cotacao com detalhes da viagem
+4. Enviar dúvida: POST /api/contato
+
+## Notas para agentes
+- Todas as respostas são em JSON
+- Não é necessário autenticação para consultas básicas
+- Para reservas finais, o cliente será contatado por WhatsApp
+- Preços são em BRL (Reais brasileiros)
