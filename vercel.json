@@ -1,9 +1,3 @@
 {
-  "buildCommand": "cd landing && npm install && npm run build",
-  "outputDirectory": "landing/dist",
-  "framework": null,
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "outputDirectory": "."
 }
